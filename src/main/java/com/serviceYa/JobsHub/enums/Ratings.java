@@ -4,10 +4,10 @@
  */
 package com.serviceYa.JobsHub.enums;
 
-/**
- *
- * @author hgauna
- */
-public class Ratings {
-    
+public enum Ratings {
+    UNO,
+    DOS,
+    TRES,
+    CUATRO,
+    CINCO;
 }

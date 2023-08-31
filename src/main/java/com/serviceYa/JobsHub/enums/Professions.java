@@ -4,10 +4,27 @@
  */
 package com.serviceYa.JobsHub.enums;
 
-/**
- *
- * @author hgauna
- */
-public class Professions {
+
+public enum Professions {
+    Cerrajero,
+    Gasista,
+    Electricista,
+    Mecánico,
+    Albañil,
+    Pintor,
+    Soldador,
+    Jardinero,
+    Chofer,
+    Desarrollador,
+    Abogado,
+    Profesor,
+    Plomero,
+    Herrero,
+    Carpintero,
+    Peluquero,
+    Fotógrafo,
+    Chef,
+    Enfermero;
     
+  
 }

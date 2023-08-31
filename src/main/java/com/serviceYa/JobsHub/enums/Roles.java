@@ -8,6 +8,8 @@ package com.serviceYa.JobsHub.enums;
  *
  * @author hgauna
  */
-public class Roles {
-    
+public enum Roles {
+    ADMIN,
+    PROVIDER,
+    CUSTOMER;
 }

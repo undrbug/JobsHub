@@ -4,10 +4,12 @@
  */
 package com.serviceYa.JobsHub.enums;
 
-/**
- *
- * @author hgauna
- */
-public class WorkStatus {
-    
+
+public enum WorkStatus {
+    REJECTED,
+    REQUIRED,
+    ACCEPTED,
+    DONE,
+    REVERT,
+    REVIEWED;
 }
