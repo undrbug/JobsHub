@@ -1,13 +1,13 @@
 
 package com.serviceYa.JobsHub.Repositories;
 
-import com.serviceYa.JobsHub.enums.Professions;
-import com.serviceYa.JobsHub.enums.Roles;
+import com.serviceYa.JobsHub.Enums.Professions;
+import com.serviceYa.JobsHub.Enums.Roles;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import com.serviceYa.JobsHub.entities.User;
+import com.serviceYa.JobsHub.Entities.User;
 import org.springframework.data.repository.query.Param;
 
 public interface UserRepository extends JpaRepository<User, String>{
