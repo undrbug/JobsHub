@@ -1,8 +1,8 @@
 
 package com.serviceYa.JobsHub.Repositories;
 
-import com.serviceYa.JobsHub.entities.User;
-import com.serviceYa.JobsHub.entities.Work;
+import com.serviceYa.JobsHub.Entities.User;
+import com.serviceYa.JobsHub.Entities.Work;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
