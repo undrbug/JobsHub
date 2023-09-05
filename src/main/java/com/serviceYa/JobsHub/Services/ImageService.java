@@ -1,6 +1,5 @@
 package com.serviceYa.JobsHub.Services;
 
-
 import com.serviceYa.JobsHub.Entities.Image;
 import com.serviceYa.JobsHub.Repositories.ImageRepository;
 import com.serviceYa.JobsHub.converters.ImageConverter;
