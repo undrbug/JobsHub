@@ -1,0 +1,41 @@
+/* Estilos para el pie de página */
+.footer { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid #000;
+  background-color: #fff;
+  box-shadow: 0px -7px 12px -3px rgba(0, 0, 0, 0.262);
+}
+
+/* Estilos para las imágenes en el pie de página */
+.imgFooter {
+  width: 45px;
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos para el texto en el pie de página */
+.footer p {
+  font-size: 15px;
+  text-align: center; /* Centra el texto en el pie de página */
+  margin: 5px 0; /* Espacio en la parte superior e inferior del texto */
+}
+
+/* Estilos para hacer el pie de página responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem;
+  }
+
+  .imgFooter {
+    width: 30px;
+  }
+
+  .footer p {
+    font-size: 14px;
+    margin: 3px 0;
+  }
+}

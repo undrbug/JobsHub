@@ -1,0 +1,20 @@
+/* Estilos para la página de proveedores */
+.main-providers {
+  padding-top: 7em;
+}
+
+/* Estilos para la clase "tools" en pantallas más grandes (mayor a 768px) */
+.tools {
+  width: 50%;
+}
+
+/* Estilos para hacer la página de proveedores responsive en pantallas más pequeñas (menor o igual a 768px) */
+@media (max-width: 768px) {
+  .main-providers {
+    padding-top: 3em; /* Ajusta el espaciado en pantallas pequeñas */
+  }
+
+  .tools {
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+  }
+}

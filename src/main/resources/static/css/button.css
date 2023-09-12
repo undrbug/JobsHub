@@ -1,0 +1,66 @@
+/* Estilos generales para botones */
+.btn,
+.btn-warning,
+.button,
+.boton-github {
+  background: #f1c057;
+  border: #f1c057;
+  color: #333;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 20px; /* Ajusta el espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  transition: transform 0.3s ease;
+  display: inline-block; /* Para que los botones se ajusten al contenido */
+  text-decoration: none; /* Elimina subrayado en enlaces */
+}
+
+/* Cambia el tamaño de los botones en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .btn,
+  .btn-warning,
+  .button,
+  .boton-github {
+    font-size: 14px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+  }
+}
+
+/* Hover y enfoque */
+.btn:hover,
+.btn-warning:hover,
+.button:hover,
+.boton-github:hover,
+.btn:active,
+.btn-warning:active,
+.button:active,
+.boton-github:active,
+.btn:focus,
+.btn-warning:focus,
+.button:focus,
+.boton-github:focus {
+  transform: scale(1.1);
+  background-color: #f36500;
+  transition: 0.3s; /* Reduce la duración de la transición */
+  outline: none; /* Elimina el contorno al hacer clic */
+}
+
+/* Estilos para el botón de GitHub */
+.boton-github {
+  background-color: #24292e;
+  color: white;
+  padding: 8px 16px; /* Ajusta el espaciado interno para pantallas más pequeñas */
+  font-size: 18px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+  border-radius: 7px;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+/* Estilos para el botón de GitHub en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .boton-github {
+    font-size: 16px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    padding: 6px 12px; /* Ajusta el espaciado interno para pantallas más pequeñas */
+  }
+}

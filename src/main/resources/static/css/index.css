@@ -1,0 +1,67 @@
+html {
+  /* background-color: #212429; */
+  height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Paytone One', sans-serif;
+  background: #eee;
+  padding: 0; /* Elimina el relleno para evitar espacios en blanco innecesarios en dispositivos móviles */
+}
+
+main {
+  padding: 1rem 1rem; /* Reduce el relleno en pantallas más pequeñas */
+  text-align: justify;
+}
+
+.left-col {
+  margin: 2em 0; /* Ajusta el margen en pantallas más pequeñas */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.providers {
+  display: flex;
+  flex-direction: column; /* Cambia a disposición de columna en pantallas pequeñas */
+  align-items: center;
+}
+
+/* Estilos para el mapa */
+.map {
+  width: 100%;
+  max-width: 100%; /* Ajusta el ancho máximo para pantallas pequeñas */
+  height: 300px;
+  border: none;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 8px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 8px rgba(0, 0, 0, 0);
+}
+
+/* Estilos para hacer el mapa responsive en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .map {
+    height: 200px; /* Ajusta la altura para pantallas más pequeñas */
+  }
+  .col{
+      display: flex;
+  }
+}
+
+/* Estilos para hacer el mapa responsive en pantallas aún más pequeñas */
+@media (max-width: 576px) {
+  .map {
+    height: 150px; /* Ajusta la altura para pantallas aún más pequeñas */
+  }
+  .col{
+      display: flex;
+  }
+}

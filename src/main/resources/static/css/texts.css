@@ -1,0 +1,73 @@
+/* Estilos generales para los títulos y subtítulos */
+.big-title,
+.big-title2,
+.big-title3,
+.title,
+.subtitle,
+.subtitle2,
+.subtitle3 {
+  color: #9b3f94;
+}
+
+/* Estilos para los títulos grandes */
+.big-title {
+  font-size: 60px;
+  text-align: left;
+  margin: 0 0 1em 0; /* Ajuste de margen para pantallas más pequeñas */
+}
+
+.big-title2 {
+  font-size: 48px;
+  text-align: center;
+  margin: 1em 0; /* Ajuste de margen para pantallas más pequeñas */
+}
+
+.big-title3 {
+  font-size: 48px;
+  text-align: center;
+  margin: 0.5em 0 1em 0; /* Ajuste de margen para pantallas más pequeñas */
+}
+
+/* Estilos para los subtítulos */
+.subtitle,
+.subtitle2,
+.subtitle3 {
+  font-size: 24px;
+}
+
+.subtitle {
+  text-align: left;
+  margin: 0 0 1em 0; /* Ajuste de margen para pantallas más pequeñas */
+}
+
+.subtitle2 {
+  text-align: center;
+  margin: 0 0 1em 0; /* Ajuste de margen para pantallas más pequeñas */
+}
+
+.subtitle3 {
+  font-size: 20px;
+  text-align: center;
+  margin: 0 0 1em 0; /* Ajuste de margen para pantallas más pequeñas */
+}
+
+/* Estilos para el título principal */
+.title {
+  font-size: 60px;
+  text-align: center;
+  margin: 1em 0; /* Ajuste de margen para pantallas más pequeñas */
+}
+
+/* Estilos para hacer los textos responsivos */
+@media (max-width: 768px) {
+  .big-title,
+  .big-title2,
+  .big-title3,
+  .title,
+  .subtitle,
+  .subtitle2,
+  .subtitle3 {
+    font-size: 20px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    margin: 1em 0; /* Ajuste de margen para pantallas más pequeñas */
+  }
+}

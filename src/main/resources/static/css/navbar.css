@@ -1,0 +1,79 @@
+/* PRIMER DISEÑO
+.navbar {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  padding: 0.625em 15.625em;
+  //10px = 0.625em, 250px = 15.625em
+  //text-align: justify; 
+
+  color: #333;
+  accent-color: #e48c0d;
+
+  -webkit-box-shadow: 5px 5px 12px -3px rgba(0, 0, 0, 0.262);
+  box-shadow: 5px 5px 12px -3px rgba(0, 0, 0, 0.262);
+}
+
+.logo {
+  transform: scale(1.5);
+  margin: 0 1em 0 3em;
+}
+
+.navbar-brand:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.navbar-nav{
+  font-size: 14px;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}*/
+/* SEGUNDO DISEÑO Estilos generales de la barra de navegación */
+.navbar {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  padding: 0.625em 5%; /* Ajuste del padding */
+  text-align: center; /* Alineación centrada para pantallas pequeñas */
+  color: #333;
+  accent-color: #e48c0d;
+  -webkit-box-shadow: 5px 5px 12px -3px rgba(0, 0, 0, 0.262);
+  box-shadow: 5px 5px 12px -3px rgba(0, 0, 0, 0.262);
+}
+
+/* Estilos del logo */
+.logo {
+  width:40px;
+  height:24px;
+  max-width: 100px; /* Tamaño del logo */
+  height: auto;
+  margin: 10px;
+  transform: scale(1.5);
+}
+
+/* Estilos para los enlaces de la barra de navegación */
+.navbar-nav {
+  font-size: 14px;
+}
+.Title-web{
+    font-size:28px;
+}
+/* Estilos para el botón de hamburguesa */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+  }
+  .logo {
+  width:30px;
+  }
+  .Title-web{
+    font-size:16px;
+    }
+  .navbar-nav {
+  font-size: 14px;
+  }
+}

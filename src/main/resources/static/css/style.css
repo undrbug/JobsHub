@@ -1,0 +1,859 @@
+
+/*---------------------------------INICIO RESET.CSS-------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Utilizar un selector universal para aplicar el reset a todos los elementos */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box; /* Agregar box-sizing para que el ancho y alto sean consistentes */
+}
+
+/* HTML5 display-role reset para navegadores más antiguos */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* Añadir reset de quotes para blockquote y q */
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* Añadir reset de lista a dl, dt, dd, ol, ul, li */
+dl, dt, dd, ol, ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Añadir reset de tabla a table, caption, tbody, tfoot, thead, tr, th, td */
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Añadir reset de línea de base y tamaño de fuente a body */
+body {
+	line-height: 1;
+	font-size: 100%; /* Añadir fuente porcentual para evitar herencia de tamaño de fuente */
+}
+
+/* Añadir reset de elementos en línea a a, abbr, acronym, b, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, u, var */
+a, abbr, acronym, b, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, u, var {
+	border: 0;
+	background: none;
+	text-decoration: none;
+	font-weight: inherit; /* Añadir herencia de peso de fuente */
+	font-style: inherit; /* Añadir herencia de estilo de fuente */
+}
+
+/* Añadir reset de elementos de formulario a fieldset, form, label, legend, select */
+fieldset, form, label, legend, select {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Añadir reset de elementos de formulario a button, input, textarea */
+button, input, textarea {
+	border: none;
+	background-color: transparent;
+}
+
+/*---------------------------------FIN RESET.CSS----------------------------*/
+/* Estilos generales */
+
+* {
+  box-sizing: inherit;
+}
+html {
+  /* background-color: #212429; */
+  height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+main {
+  text-align: center;
+  max-width: 100%;   
+}
+body {
+  margin: 0;
+  font-family: 'Paytone One', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Cambia a min-height para garantizar que la página se ajuste a la altura del dispositivo */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #eee;
+  /* padding-bottom: 3em ;  Elimina el relleno para evitar espacios en blanco innecesarios en dispositivos móviles */
+}
+.container {
+  margin: 3em;
+  text-align: center;
+}
+/*---------------------------------INICIO NAVBAR.CSS----------------------*/
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+container-xxl {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.navbar-brand {
+    white-space: nowrap;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-content: stretch;
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
+.navbar {
+  position: fixed;
+  top: 0; /* Coloca el navbar en la parte superior */
+  left: 0; /* Alinea el navbar a la izquierda */
+  z-index: 9999;
+  width: 100%;
+  padding: 0.625em 5%; /* Ajuste del padding */
+  text-align: center; /* Alineación centrada para pantallas pequeñas */
+  color: #333;
+  accent-color: #e48c0d;
+  -webkit-box-shadow: 5px 5px 12px -3px rgba(0, 0, 0, 0.262);
+  box-shadow: 5px 5px 12px -3px rgba(0, 0, 0, 0.262);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+/* Estilos del logo */
+.logo {
+  width:40px;
+  height:24px;
+  max-width: 100px; /* Tamaño del logo */
+  height: auto;
+  margin: 10px;
+  transform: scale(1.5);
+}
+/* Estilos para los enlaces de la barra de navegación */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  font-size: 14px;
+}
+.Title-web{
+    font-size:28px;
+}
+.image-profile-navbar {
+  max-width: 40px;
+  height: auto;
+  opacity: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.5);
+}
+li.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+/*---------------------------------FIN NAVBAR.CSS-------------------------*/
+
+/*-----------------------------------INCIO BUTTON.CSS-----------------------*/
+.btn,
+.btn-warning,
+.button,
+.boton-github {
+  background: #f1c057;
+  border: #f1c057;
+  color: #333;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 20px; /* Ajusta el espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  transition: transform 0.3s ease;
+  display: inline-block; /* Para que los botones se ajusten al contenido */
+  text-decoration: none; /* Elimina subrayado en enlaces */
+}
+/* Hover y enfoque */
+.btn:hover,
+.btn-warning:hover,
+.button:hover,
+.boton-github:hover,
+.btn:active,
+.btn-warning:active,
+.button:active,
+.boton-github:active,
+.btn:focus,
+.btn-warning:focus,
+.button:focus,
+.boton-github:focus {
+  transform: scale(1.1);
+  background-color: #f36500;
+  transition: 0.3s; /* Reduce la duración de la transición */
+  outline: none; /* Elimina el contorno al hacer clic */
+}
+/* Estilos para el botón de GitHub */
+.boton-github {
+  background-color: #24292e;
+  color: white;
+  padding: 8px 16px; /* Ajusta el espaciado interno para pantallas más pequeñas */
+  font-size: 18px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+  border-radius: 7px;
+  margin: 0 5px;
+  display: inline-block;
+}
+/*-----------------------------------FIN BUTTON.CSS-------------------------*/
+
+/*---------------------------------INCIO CARDS.CSS--------------------------*/
+.row-user-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en pantallas pequeñas */
+}
+.card-user {
+  margin: 0 15px; /* Ajuste de margen para pantallas más pequeñas */
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  flex: 1; /* Distribuye el espacio disponible en pantallas pequeñas */
+}
+.card {
+  width: 15em;
+  height: 10em;
+  display: flex;
+  flex-direction: column; /* Para ajustar el contenido en pantallas pequeñas */
+  align-items: center;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  margin: 1em; /* Espaciado uniforme para todas las tarjetas */
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 8px rgba(0, 0, 0, 0);
+}
+.card-img-top {
+  width: 4em;
+  height: 4em;
+  margin-top: -30px;
+  margin-bottom: 0.5em;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+}
+.card-title {
+  font-size: 14.5px; /* Corregir la coma a punto para el tamaño de fuente */
+  color: #4050e1;
+  margin: -1em;
+}
+.card-text {
+  flex: 1;
+  margin: 1rem;
+  padding: 1rem;
+}
+.card-link {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+/* Estilos para las tarjetas de servicios */
+.card-services {
+  background: none;
+  box-shadow: none;
+  opacity: 1;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Estilos para tarjetas de error */
+.container-error-card {
+  margin: -50px 0;
+}
+
+.col-md-6,
+.mx-auto {
+  opacity: 0.7;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -100px;
+  z-index: 9998;
+}
+
+.highlight {
+  background-color: #f1c057;
+}
+
+/* Estilos para tarjetas grandes */
+.large-card {
+  width: 95%;
+  max-width: 100%; /* Ajusta el ancho máximo para pantallas pequeñas */
+  height: auto;
+}
+
+/* Estilos para tarjetas de perfil de proveedor */
+.big-card-profile {
+  width: 100%;
+  max-width: 100%; /* Ajusta el ancho máximo para pantallas pequeñas */
+  height: auto;
+}
+/*---------------------------------FIN CARDS.CSS--------------------------*/
+
+
+
+/*---------------------------------INICIO FORM.CSS------------------------*/
+/* Estilos comunes para formularios */
+form {
+  max-width: 600px; /* Ancho máximo del formulario */
+  margin: 0 auto; /* Centrar el formulario horizontalmente */
+  padding: 20px;
+}
+
+/* Estilos para etiquetas de campo */
+label {
+  display: block; /* Colocar cada etiqueta en una nueva línea */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Estilos para campos de entrada de texto */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Estilos para botones */
+button[type="submit"] {
+  background: #f1c057;
+  border: #f1c057;
+  color: #333;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 20px; /* Ajusta el espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  transition: transform 0.3s ease;
+  display: inline-block; /* Para que los botones se ajusten al contenido */
+  text-decoration: none
+}
+/* Estilos para elementos en línea en el formulario (por ejemplo, mensajes de error) */
+.form-inline {
+  display: inline;
+}
+/*---------------------------------FIN FORM.CSS---------------------------*/
+
+/*---------------------------------INICIO IMAGE.CSS-----------------------*/
+/* Estilos para las imágenes */
+.image {
+  max-width: 100%; /* Establece el ancho máximo al 100% del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+/* Otros estilos para imágenes específicas si es necesario */
+.imagen-customer,
+.profile-picture,
+.image-profile{
+  max-width: 30%;
+  height: auto;
+  margin: 8em 0 0 0;
+}
+.imageProfile2{
+  max-width: 30%;
+  height: auto;
+  margin: 3em 0 0 0;
+}
+.image2 {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 5em 0 0 0;
+}
+.image3 {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 5em 0 0 0;
+}
+.image4 {
+  width: auto;
+  max-width: 40%;
+  height: auto;
+  margin: 5em 0 0 0;
+}
+.image5 {
+  width:auto;
+  max-width: 70%;
+  height: auto;
+  margin: 5em 0 0 0;
+}
+.image6 {
+  width:auto;
+  max-width: 50%;
+  height: auto;
+  margin: 5em 0 0 0;
+}
+/* Estilos para la imagen de perfil */
+
+/*---------------------------------FIN IMAGE.CSS--------------------------*/
+
+/*---------------------------------INICIO INDEX.CSS-----------------------*/
+.left-col {
+  margin: 2em 0; /* Ajusta el margen en pantallas más pequeñas */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.providers {
+  display: flex;
+  flex-direction: column; /* Cambia a disposición de columna en pantallas pequeñas */
+  align-items: center;
+}
+/* Estilos para el mapa */
+.map {
+  width: 100%;
+  max-width: 100%; /* Ajusta el ancho máximo para pantallas pequeñas */
+  height: 300px;
+  border: none;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 8px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 8px rgba(0, 0, 0, 0);
+}
+/*---------------------------------FIN INDEX.CSS--------------------------*/
+/*---------------------------------INICIO LOGIN.CSS-----------------------*/
+/* Estilos para el formulario */
+.form-container {
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 8px rgba(0, 0, 0, 0);
+}
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-container button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #e48c0d;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Estilos para el mensaje de error */
+.alert {
+  margin-top: 20px;
+}
+
+/*---------------------------------FIN LOGIN.CSS--------------------------*/
+
+/*---------------------------------INICIO PROVIDERS.CSS-------------------*/
+/* Estilos para la página de proveedores */
+.main-providers {
+  padding-top: 7em;
+}
+
+/* Estilos para la clase "tools" en pantallas más grandes */
+.tools {
+  width: 50%;
+}
+/*---------------------------------FIN PROVIDERS.CSS----------------------*/
+
+/*---------------------------------INICIO SERVICES.CSS--------------------*/
+/* Estilos generales para los servicios */
+.services {
+  width: 100%; /* Cambia el ancho para que los servicios ocupen el 100% del contenedor */
+  max-width: 150px; /* Establece un ancho máximo para cada servicio */
+  margin: 1rem; /* Agrega margen para espaciar los servicios */
+}
+
+.services:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.service-description {
+  text-align: center;
+  margin: 1em 0 0 0;
+}
+
+.services-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Estilos para las columnas que contienen los servicios */
+.col {
+  flex-basis: calc(33.33% - 2rem); /* Divide las columnas en un tercio del ancho del contenedor */
+  margin: 1rem; /* Agrega margen entre las columnas */
+  padding: 1rem; /* Agrega relleno para espaciar el contenido */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: auto; /* Establece la altura automáticamente según el contenido */
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+}
+/*---------------------------------FIN SERVICES.CSS-----------------------*/
+/*---------------------------------INICIO TABLE.CSS-----------------------*/
+/* Estilos generales para la tabla */
+table {
+  table-layout: auto;
+  width: 100%;
+  border-collapse: collapse; /* Agregamos un borde entre las celdas */
+}
+
+td {
+  white-space: nowrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 10px; /* Agregamos espaciado a las celdas */
+}
+
+.profilePic {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+th {
+  color: #f1c057;
+  text-align: left;
+  padding: 10px; /* Agregamos espaciado a las celdas de encabezado */
+}
+
+th[colspan="3"] {
+  text-align: center;
+}
+
+.td-role,
+.td-profession {
+  text-transform: lowercase;
+}
+
+td a {
+  text-decoration: none;
+  color: #f1c057;
+}
+/*---------------------------------FIN TABLE.CSS--------------------------*/
+
+/*---------------------------------INICIO TEXT.CSS------------------------*/
+/* Estilos generales para los títulos y subtítulos */
+.big-title,
+.big-title2,
+.big-title3,
+.title,
+.subtitle,
+.subtitle2,
+.subtitle3 {
+  color: #9b3f94;
+}
+
+/* Estilos para los títulos grandes */
+.big-title {
+  font-size: 60px;
+  text-align: left;
+  margin: 0 0 1em 0; /* Ajuste de margen para pantallas más pequeñas */
+}
+
+.big-title2 {
+  font-size: 48px;
+  text-align: center;
+  margin: 1em 0; /* Ajuste de margen para pantallas más pequeñas */
+}
+
+.big-title3 {
+  font-size: 48px;
+  text-align: center;
+  margin: 0.5em 0 1em 0; /* Ajuste de margen para pantallas más pequeñas */
+}
+
+/* Estilos para los subtítulos */
+.subtitle,
+.subtitle2,
+.subtitle3 {
+  font-size: 24px;
+}
+
+.subtitle {
+  text-align: left;
+  margin: 0 0 1em 0; /* Ajuste de margen para pantallas más pequeñas */
+}
+
+.subtitle2 {
+  text-align: center;
+  margin: 0 0 1em 0; /* Ajuste de margen para pantallas más pequeñas */
+}
+
+.subtitle3 {
+  font-size: 20px;
+  text-align: center;
+  margin: 0 0 1em 0; /* Ajuste de margen para pantallas más pequeñas */
+}
+/* Estilos para el título principal */
+.title {
+  font-size: 60px;
+  text-align: center;
+  margin: 1em 0; /* Ajuste de margen para pantallas más pequeñas */
+}
+/*---------------------------------FIN TEXT.CSS----------------------*/
+/*---------------------------------INICIO FOOTER.CSS----------------------*/
+/* Estilos para el pie de página */ 
+.footer {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border-top: 1px solid #000;
+    box-shadow: 0px -7px 12px -3px rgba(0, 0, 0, 0.262);
+    margin-top: auto;
+    margin-bottom: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch;
+}
+.my-4 {
+    margin-bottom: 0rem !important;
+}
+border-top{
+ border-top: #000!important;
+}
+/* Centra el contenido horizontalmente en el pie de página */
+
+/* Estilos para las imágenes en el pie de página */
+.imgFooter {
+  width: 45px;
+}
+/* Estilos para el texto en el pie de página */
+.footer p {
+  font-size: 15px;
+  text-align: center; /* Centra el texto en el pie de página */
+  margin: 5px 0; /* Espacio en la parte superior e inferior del texto */
+}
+
+/*---------------------------------FIN FOOTER.CSS-------------------------*/
+@media (max-width: 900px){
+    main {
+    text-align: center;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    }
+    .row {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    }
+    .col {
+    flex-basis: calc(33.33% - 2rem);
+    margin: 2rem;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    }
+    li.nav-item {
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+/*-----------------------------------INCIO BUTTON.CSS---------------------*/  
+    /* Cambia el tamaño de los botones en pantallas más pequeñas */
+    .btn,
+    .btn-warning,
+    .button,
+    .boton-github {
+    font-size: 14px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+  }
+  /* Estilos para el botón de GitHub en pantallas más pequeñas */
+    .boton-github {
+        font-size: 16px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+        padding: 6px 12px; /* Ajusta el espaciado interno para pantallas más pequeñas */
+    }
+/*-----------------------------------FIN BUTTON.CSS-----------------------*/
+
+/*---------------------------------INICIO FOOTER.CSS----------------------*/
+   /* Estilos para hacer el pie de página responsive */
+  .footer {
+    padding: 1rem;
+  }
+  .imgFooter {
+    width: 30px;
+  }
+  .footer p {
+    font-size: 14px;
+    margin: 3px 0;
+  }
+/*---------------------------------FIN FOOTER.CSS-------------------------*/
+
+/*---------------------------------INICIO FORM.CSS------------------------*/
+/* Estilos para hacer el formulario responsive en pantallas más pequeñas */
+  form {
+    padding: 10px;
+  }
+/*---------------------------------FIN FORM.CSS---------------------------*/
+
+/*---------------------------------INICIO IMAGE.CSS-----------------------*/
+/*---------------------------------FIN IMAGE.CSS--------------------------*/
+
+/*---------------------------------INICIO INDEX.CSS-----------------------*/
+/* Estilos para hacer el mapa responsive en pantallas más pequeñas */
+  .map {
+    height: 200px; /* Ajusta la altura para pantallas más pequeñas */
+  }
+  .col{
+      display: flex;
+  }
+
+/*---------------------------------FIN INDEX.CSS--------------------------*/
+
+/*---------------------------------INICIO LOGIN.CSS-----------------------*/
+/*---------------------------------FIN LOGIN.CSS--------------------------*/
+
+/*---------------------------------INICIO NAVBAR.CSS----------------------*/
+/* Estilos para el botón de hamburguesa */
+.navbar-toggler {
+    display: block;
+  }
+  .logo {
+  width:30px;
+  }
+  .Title-web{
+    font-size:16px;
+    }
+  .navbar-nav {
+  font-size: 14px;
+  }
+/*---------------------------------FIN NAVBAR.CSS-------------------------*/
+
+/*---------------------------------INICIO PROVIDERS.CSS-------------------*/
+/* Estilos para hacer la página de proveedores responsive en pantallas más pequeñas (menor o igual a 768px) */
+  .tools {
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+  }
+/*---------------------------------FIN PROVIDERS.CSS----------------------*/
+
+/*---------------------------------INICIO SERVICES.CSS--------------------*/
+/*---------------------------------FIN SERVICES.CSS-----------------------*/
+
+/*---------------------------------INICIO TABLE.CSS-----------------------*/
+td,
+  th {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  td {
+    padding: 5px;
+  }
+  
+  th[colspan="3"] {
+    text-align: center;
+  }
+/*---------------------------------FIN TABLE.CSS--------------------------*/
+
+/*---------------------------------INICIO TEXT.CSS------------------------*/
+.big-title,
+  .big-title2,
+  .big-title3,
+  .title,
+  .subtitle,
+  .subtitle2,
+  .subtitle3 {
+    font-size: 20px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    margin: 1em 0; /* Ajuste de margen para pantallas más pequeñas */
+  }
+/*---------------------------------FIN TEXT.CSS----------------------*/
+}
+@media (max-width: 576px) {
+/*---------------------------------INICIO INDEX.CSS-----------------------*/
+    /* Estilos para hacer el mapa responsive en pantallas aún más pequeñas */
+  .map {
+    height: 150px; /* Ajusta la altura para pantallas aún más pequeñas */
+  }
+  .col{
+      display: flex;
+  }
+}
+/*---------------------------------FIN INDEX.CSS--------------------------*/

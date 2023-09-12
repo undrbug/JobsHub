@@ -1,0 +1,62 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: 'Paytone One', sans-serif;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Cambia a min-height para garantizar que la página se ajuste a la altura del dispositivo */
+}
+
+main {
+  text-align: center;
+  max-width: 100%; /* Ajusta el ancho máximo para pantallas pequeñas */
+  padding: 1rem; /* Reduce el relleno en pantallas pequeñas */
+}
+
+/* Estilos para el formulario */
+.form-container {
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 8px rgba(0, 0, 0, 0);
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #e48c0d;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para el mensaje de error */
+.alert {
+  margin-top: 20px;
+}
+
+/* Estilos para la imagen */
+.image2 {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem; /* Agrega un espacio en la parte superior de la imagen */
+}

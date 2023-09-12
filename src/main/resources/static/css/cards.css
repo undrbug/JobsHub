@@ -1,0 +1,110 @@
+/* Estilos para las tarjetas de usuario */
+.row-user-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en pantallas pequeñas */
+}
+
+.card-user {
+  margin: 0 15px; /* Ajuste de margen para pantallas más pequeñas */
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  flex: 1; /* Distribuye el espacio disponible en pantallas pequeñas */
+}
+
+.card {
+  width: 15em;
+  height: 10em;
+  display: flex;
+  flex-direction: column; /* Para ajustar el contenido en pantallas pequeñas */
+  align-items: center;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  margin: 1em; /* Espaciado uniforme para todas las tarjetas */
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 8px rgba(0, 0, 0, 0);
+}
+
+.card-img-top {
+  width: 4em;
+  height: 4em;
+  margin-top: -30px;
+  margin-bottom: 0.5em;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+  font-size: 14.5px; /* Corregir la coma a punto para el tamaño de fuente */
+  color: #4050e1;
+  margin: -1em;
+}
+
+.card-text {
+  flex: 1;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.card-link {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+/* Estilos para las tarjetas de servicios */
+.card-services {
+  background: none;
+  box-shadow: none;
+  opacity: 1;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Estilos para tarjetas de error */
+.container-error-card {
+  margin: -50px 0;
+}
+
+.col-md-6,
+.mx-auto {
+  opacity: 0.7;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -100px;
+  z-index: 9999;
+}
+
+.highlight {
+  background-color: #f1c057;
+}
+
+/* Estilos para tarjetas grandes */
+.large-card {
+  width: 95%;
+  max-width: 100%; /* Ajusta el ancho máximo para pantallas pequeñas */
+  height: auto;
+}
+
+/* Estilos para tarjetas de perfil de proveedor */
+.big-card-profile {
+  width: 100%;
+  max-width: 100%; /* Ajusta el ancho máximo para pantallas pequeñas */
+  height: auto;
+}

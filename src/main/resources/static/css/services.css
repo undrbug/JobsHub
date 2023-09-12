@@ -1,0 +1,41 @@
+/* Estilos generales para los servicios */
+.services {
+  width: 100%; /* Cambia el ancho para que los servicios ocupen el 100% del contenedor */
+  max-width: 150px; /* Establece un ancho máximo para cada servicio */
+  margin: 1rem; /* Agrega margen para espaciar los servicios */
+}
+
+.services:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.service-description {
+  text-align: center;
+  margin: 1em 0 0 0;
+}
+
+.services-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Estilos para las columnas que contienen los servicios */
+.col {
+  flex-basis: calc(33.33% - 2rem); /* Divide las columnas en un tercio del ancho del contenedor */
+  margin: 1rem; /* Agrega margen entre las columnas */
+  padding: 1rem; /* Agrega relleno para espaciar el contenido */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: auto; /* Establece la altura automáticamente según el contenido */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que las filas se envuelvan en pantallas pequeñas */
+}
