@@ -2,14 +2,11 @@
 <!-- html xmlns:th="http://www.thymeleaf.org" = Para evitar que HTML arroje errores por trabajar con elementos de thymeleaf -->
 <html
   xmlns:th="http://www.thymeleaf.org"
-  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
->
+  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
   <head th:replace="th_templates/head :: head"></head>
-
   <body>
     <!-- NAVBAR  -->
     <header th:replace="th_templates/navbar :: navbar"></header>
-
     <main>
       <!-- IMG OF THE HANDYMAN -->
       <div class="container text-center">
@@ -23,7 +20,7 @@
         </div>
       </div>
       <h2 class="big-title3">¿Quiénes Somos?</h2>
-      <h4 class="subtittle text-justify">
+      <h4 class="subtittle   font-weight-bold text-justify" style="font-family: Roboto, sans-serif;">
         Somos una plataforma líder como proveedor de contacto para servicios, conectando a los 
         usuarios con profesionales confiables como
         gasistas, plomeros, electricistas, etc. Los usuarios pueden buscar y
@@ -34,10 +31,8 @@
       </h4>
     </main>
     <br><br><br>
-
     <!-- FOOTER -->
     <footer th:replace="th_templates/footer :: footer"></footer>
-
     <!-- Script / Bootstrap -->
     <div th:replace="th_templates/bootstrap :: bootstrap"></div>
   </body>

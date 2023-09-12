@@ -99,7 +99,8 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  background: #eee;
+  background: #6bcdc970;
+  /*background: #eee;*/
   /* padding-bottom: 3em ;  Elimina el relleno para evitar espacios en blanco innecesarios en dispositivos móviles */
 }
 .container {
@@ -502,21 +503,17 @@ button[type="submit"] {
 .alert {
   margin-top: 20px;
 }
-
 /*---------------------------------FIN LOGIN.CSS--------------------------*/
-
 /*---------------------------------INICIO PROVIDERS.CSS-------------------*/
 /* Estilos para la página de proveedores */
 .main-providers {
   padding-top: 7em;
 }
-
 /* Estilos para la clase "tools" en pantallas más grandes */
 .tools {
   width: 50%;
 }
 /*---------------------------------FIN PROVIDERS.CSS----------------------*/
-
 /*---------------------------------INICIO SERVICES.CSS--------------------*/
 /* Estilos generales para los servicios */
 .services {
@@ -524,17 +521,14 @@ button[type="submit"] {
   max-width: 150px; /* Establece un ancho máximo para cada servicio */
   margin: 1rem; /* Agrega margen para espaciar los servicios */
 }
-
 .services:hover {
   transform: scale(1.1);
   transition: 1s;
 }
-
 .service-description {
   text-align: center;
   margin: 1em 0 0 0;
 }
-
 .services-row {
   display: flex;
   justify-content: center;
@@ -569,42 +563,35 @@ table {
   width: 100%;
   border-collapse: collapse; /* Agregamos un borde entre las celdas */
 }
-
 td {
   white-space: nowrap;
   word-wrap: break-word;
   overflow-wrap: break-word;
   padding: 10px; /* Agregamos espaciado a las celdas */
 }
-
 .profilePic {
   width: 2em;
   height: 2em;
   border-radius: 50%;
   object-fit: cover;
 }
-
 th {
   color: #f1c057;
   text-align: left;
   padding: 10px; /* Agregamos espaciado a las celdas de encabezado */
 }
-
 th[colspan="3"] {
   text-align: center;
 }
-
 .td-role,
 .td-profession {
   text-transform: lowercase;
 }
-
 td a {
   text-decoration: none;
   color: #f1c057;
 }
 /*---------------------------------FIN TABLE.CSS--------------------------*/
-
 /*---------------------------------INICIO TEXT.CSS------------------------*/
 /* Estilos generales para los títulos y subtítulos */
 .big-title,
@@ -616,33 +603,28 @@ td a {
 .subtitle3 {
   color: #9b3f94;
 }
-
 /* Estilos para los títulos grandes */
 .big-title {
   font-size: 60px;
   text-align: left;
   margin: 0 0 1em 0; /* Ajuste de margen para pantallas más pequeñas */
 }
-
 .big-title2 {
   font-size: 48px;
   text-align: center;
   margin: 1em 0; /* Ajuste de margen para pantallas más pequeñas */
 }
-
 .big-title3 {
   font-size: 48px;
   text-align: center;
   margin: 0.5em 0 1em 0; /* Ajuste de margen para pantallas más pequeñas */
 }
-
 /* Estilos para los subtítulos */
 .subtitle,
 .subtitle2,
 .subtitle3 {
   font-size: 24px;
 }
-
 .subtitle {
   text-align: left;
   margin: 0 0 1em 0; /* Ajuste de margen para pantallas más pequeñas */
@@ -688,7 +670,6 @@ border-top{
  border-top: #000!important;
 }
 /* Centra el contenido horizontalmente en el pie de página */
-
 /* Estilos para las imágenes en el pie de página */
 .imgFooter {
   width: 45px;
@@ -699,7 +680,6 @@ border-top{
   text-align: center; /* Centra el texto en el pie de página */
   margin: 5px 0; /* Espacio en la parte superior e inferior del texto */
 }
-
 /*---------------------------------FIN FOOTER.CSS-------------------------*/
 @media (max-width: 900px){
     main {
@@ -732,7 +712,7 @@ border-top{
     height: auto;
     }
     li.nav-item {
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 @media (max-width: 768px) {
