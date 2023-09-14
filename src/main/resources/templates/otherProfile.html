@@ -31,6 +31,8 @@
           <h4 class="subtitle3">Teléfono: <span th:text=" *{phone}"></span></h4>
           <h4 class="subtitle3">Servicios: <span th:text=" *{description}"></span></h4>
         </div>
+
+
         <div sec:authorize="hasRole('ROLE_CUSTOMER')">
           <a class="btn btn-warning button btn-form"
             th:href="@{/work/create(applicationType='work', idProvider=${user.id})}">🔨 Solicitar Servicio

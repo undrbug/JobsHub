@@ -2,11 +2,16 @@
 <!-- html xmlns:th="http://www.thymeleaf.org" = Para evitar que HTML arroje errores por trabajar con elementos de thymeleaf -->
 <html
   xmlns:th="http://www.thymeleaf.org"
-  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
-  <head th:replace="th_templates/head :: head"></head>
+  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+>
+    <head th:replace="th_templates/head :: head">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    </head>
+
   <body>
     <!-- NAVBAR  -->
     <header th:replace="th_templates/navbar :: navbar"></header>
+
     <main>
       <!-- IMG OF THE HANDYMAN -->
       <div class="container text-center">
@@ -20,7 +25,7 @@
         </div>
       </div>
       <h2 class="big-title3">¿Quiénes Somos?</h2>
-      <h4 class="subtittle   font-weight-bold text-justify" style="font-family: Roboto, sans-serif;">
+      <h4 class="subtittle text-justify">
         Somos una plataforma líder como proveedor de contacto para servicios, conectando a los 
         usuarios con profesionales confiables como
         gasistas, plomeros, electricistas, etc. Los usuarios pueden buscar y
@@ -30,9 +35,157 @@
         encuentren a los mejores profesionales para sus necesidades del hogar.
       </h4>
     </main>
+    <!--PRESENTACION DE EQUIPO-->
+    <div class="containerEquipe">
+        <div class="icon">
+            <div class="imgBx active" style="--i:1;" data-id="content1">
+                <img src="../img/Manu.png" alt="">
+            </div>
+            <div class="imgBx" style="--i:2;" data-id="content2">
+                <img src="./images/ashish.jpg" alt="">
+            </div>
+            <div class="imgBx" style="--i:3;" data-id="content3">
+                <img src="../img/Hernan.png" alt="">
+            </div>
+            <div class="imgBx" style="--i:4;" data-id="content4">
+                <img src="../img/Mauro.png" alt="">
+            </div>
+            <div class="imgBx" style="--i:5;" data-id="content5">
+                <img src="../img/Nahuel.png" alt="">
+            </div>
+            <div class="imgBx" style="--i:6;" data-id="content6">
+                <img src="../img/Martin.png" alt="">
+            </div>
+            <div class="imgBx" style="--i:7;" data-id="content7">
+                <img src="../img/sumit.jpg" alt="">
+            </div>
+        </div>
+        <div class="contentEquipe">
+            <div class="contentBx active" id="content1">
+                <div class="cardTeam">
+                    <div class="imgBx">
+                        <img src="../img/Manu.png" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Franco Briñocoli<br><span></span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contentBx" id="content2">
+                <div class="cardTeam">
+                    <div class="imgBx">
+                        <img src=".../img/ashish.jpg" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Ricardo Piriz<br><span></span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBx" id="content3">
+                <div class="cardTeam">
+                    <div class="imgBx">
+                        <img src="../img/Hernan.png" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Hernan Gauna<br><span></span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contentBx" id="content4">
+                <div class="cardTeam">
+                    <div class="imgBx">
+                        <img src="../img/Mauro.png" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Mauro Mayol<br><span></span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contentBx" id="content5">
+                <div class="cardTeam">
+                    <div class="imgBx">
+                        <img src="../img/Nahuel.png" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Nahuel Silva<br><span></span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBx" id="content6">
+                <div class="cardTeam">
+                    <div class="imgBx">
+                        <img src="../img/Martin.png" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Martin Aguayo<br><span></span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBx" id="content7">
+                <div class="cardTeam">
+                    <div class="imgBx">
+                        <img src="../img/sumit.jpg" alt="">
+                    </div>
+                    <div class="textBx">
+                        <h2>Antonela Soto<br><span></span></h2>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let imgBx = document.querySelectorAll('.imgBx')
+        let contentBx = document.querySelectorAll('.contentBx')
+
+        for(let i=0; i < imgBx.length; i++){
+            imgBx[i].addEventListener('mouseover', function(){
+                for(let i=0; i<contentBx.length; i++){
+                    contentBx[i].className = 'contentBx';
+                }
+                document.getElementById(this.dataset.id).className = 'contentBx active';
+                for(let i=0; i<imgBx.length; i++){
+                    imgBx[i].className = 'imgBx';
+                }
+                this.className = 'imgBx active';
+            })
+        }
+    </script>
     <br><br><br>
+
     <!-- FOOTER -->
     <footer th:replace="th_templates/footer :: footer"></footer>
+
     <!-- Script / Bootstrap -->
     <div th:replace="th_templates/bootstrap :: bootstrap"></div>
   </body>

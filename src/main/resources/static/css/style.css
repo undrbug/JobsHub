@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 /*---------------------------------INICIO RESET.CSS-------------------------*/
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -99,8 +99,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  background: #6bcdc970;
-  /*background: #eee;*/
+  background: #f43d3d8c;
   /* padding-bottom: 3em ;  Elimina el relleno para evitar espacios en blanco innecesarios en dispositivos móviles */
 }
 .container {
@@ -270,9 +269,12 @@ li.nav-item {
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
 }
 .card-title {
-  font-size: 14.5px; /* Corregir la coma a punto para el tamaño de fuente */
-  color: #4050e1;
-  margin: -1em;
+    display: flex;
+    font-size: 20px;
+    color: #4050DE;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 .card-text {
   flex: 1;
@@ -405,6 +407,9 @@ button[type="submit"] {
   height: auto;
   margin: 8em 0 0 0;
 }
+.profile-picture {
+    display: contents;
+}
 .imageProfile2{
   max-width: 30%;
   height: auto;
@@ -503,17 +508,21 @@ button[type="submit"] {
 .alert {
   margin-top: 20px;
 }
+
 /*---------------------------------FIN LOGIN.CSS--------------------------*/
+
 /*---------------------------------INICIO PROVIDERS.CSS-------------------*/
 /* Estilos para la página de proveedores */
 .main-providers {
   padding-top: 7em;
 }
+
 /* Estilos para la clase "tools" en pantallas más grandes */
 .tools {
   width: 50%;
 }
 /*---------------------------------FIN PROVIDERS.CSS----------------------*/
+
 /*---------------------------------INICIO SERVICES.CSS--------------------*/
 /* Estilos generales para los servicios */
 .services {
@@ -521,14 +530,17 @@ button[type="submit"] {
   max-width: 150px; /* Establece un ancho máximo para cada servicio */
   margin: 1rem; /* Agrega margen para espaciar los servicios */
 }
+
 .services:hover {
   transform: scale(1.1);
   transition: 1s;
 }
+
 .service-description {
   text-align: center;
   margin: 1em 0 0 0;
 }
+
 .services-row {
   display: flex;
   justify-content: center;
@@ -563,35 +575,42 @@ table {
   width: 100%;
   border-collapse: collapse; /* Agregamos un borde entre las celdas */
 }
+
 td {
   white-space: nowrap;
   word-wrap: break-word;
   overflow-wrap: break-word;
   padding: 10px; /* Agregamos espaciado a las celdas */
 }
+
 .profilePic {
   width: 2em;
   height: 2em;
   border-radius: 50%;
   object-fit: cover;
 }
+
 th {
   color: #f1c057;
   text-align: left;
   padding: 10px; /* Agregamos espaciado a las celdas de encabezado */
 }
+
 th[colspan="3"] {
   text-align: center;
 }
+
 .td-role,
 .td-profession {
   text-transform: lowercase;
 }
+
 td a {
   text-decoration: none;
   color: #f1c057;
 }
 /*---------------------------------FIN TABLE.CSS--------------------------*/
+
 /*---------------------------------INICIO TEXT.CSS------------------------*/
 /* Estilos generales para los títulos y subtítulos */
 .big-title,
@@ -603,28 +622,33 @@ td a {
 .subtitle3 {
   color: #9b3f94;
 }
+
 /* Estilos para los títulos grandes */
 .big-title {
   font-size: 60px;
   text-align: left;
   margin: 0 0 1em 0; /* Ajuste de margen para pantallas más pequeñas */
 }
+
 .big-title2 {
   font-size: 48px;
   text-align: center;
   margin: 1em 0; /* Ajuste de margen para pantallas más pequeñas */
 }
+
 .big-title3 {
   font-size: 48px;
   text-align: center;
   margin: 0.5em 0 1em 0; /* Ajuste de margen para pantallas más pequeñas */
 }
+
 /* Estilos para los subtítulos */
 .subtitle,
 .subtitle2,
 .subtitle3 {
   font-size: 24px;
 }
+
 .subtitle {
   text-align: left;
   margin: 0 0 1em 0; /* Ajuste de margen para pantallas más pequeñas */
@@ -670,6 +694,7 @@ border-top{
  border-top: #000!important;
 }
 /* Centra el contenido horizontalmente en el pie de página */
+
 /* Estilos para las imágenes en el pie de página */
 .imgFooter {
   width: 45px;
@@ -680,6 +705,203 @@ border-top{
   text-align: center; /* Centra el texto en el pie de página */
   margin: 5px 0; /* Espacio en la parte superior e inferior del texto */
 }
+
+.containerEquipe{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border: 1px solid #f5f5f5;
+    border-radius: 50%;
+    margin-top: 5em;
+}
+.containerEquipe .icon{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.containerEquipe .icon .imgBx{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: 0.5s;
+    border: 1px solid #fff;
+    box-shadow: 0 0 0 4px #222,
+    0 0 0 6px #fff;
+    transform: rotate(calc(360deg/7 * var(--i)));
+    transform-origin: 340px;
+    z-index: 100;
+    overflow: hidden;
+}
+.containerEquipe .icon .imgBx:hover{
+    margin-top: -10px;
+}
+.containerEquipe .icon .imgBx.active{
+    box-shadow: 0 0 0 4px #222,
+    0 0 0 10px #801296 ;
+}
+.containerEquipe .icon .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: rotate(calc(-360deg/7 * var(--i)));
+    transition: 0.5s;
+    filter: grayscale(1);
+}
+.containerEquipe .icon .imgBx.active img{
+    filter: grayscale(0);
+}
+.contentEquipe{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentEquipe:before{
+    content: '';
+    position: absolute;
+    inset: 70px;
+    border: 4px solid transparent;
+    border-left: 15px solid #f5e026;
+    border-right: 15px solid #fff;
+    border-radius: 50%;
+    animation: anim1 5s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+@keyframes anim1{
+    0%
+    {
+        rotate: 0deg;
+    }
+    100%
+    {
+        rotate: 360deg;
+    }
+}
+.contentEquipe:after{
+    content: '';
+    position: absolute;
+    inset: 125px;
+    border: 4px solid transparent;
+    border-top: 28px solid #801296;
+    border-bottom: 18px solid #f1faee;
+    border-radius: 50%;
+    animation: anim2 2.6s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@keyframes anim2{
+    0%
+    {
+        rotate: 360deg;
+    }
+    100%
+    {
+        rotate: 0deg;
+    }
+}
+.contentBx{
+    position: absolute;
+    transform: scale(0);
+    transition: 0.5s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentBx.active{
+    transform: scale(1);
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.contentBx .cardTeam{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-auto-flow: 15px;
+}
+
+.contentBx .cardTeam .imgBx{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.contentBx .cardTeam .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contentBx .cardTeam .textBx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contentBx .cardTeam .textBx h2{
+    margin-top: 10px;
+    position: relative;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.contentBx .cardTeam .textBx h2 span{
+    font-size: 0.65em;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+.contentBx .cardTeam .textBx .sci{
+    position: relative;
+    display: flex;
+    gap: 7px;
+    margin-top: 10px;
+}
+.contentBx .cardTeam .textBx .sci li{
+    list-style: none;
+}
+.contentBx .cardTeam .textBx .sci li a{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.contentBx .cardTeam .textBx .sci li a:hover{
+    background: #2196f3;
+}
+
 /*---------------------------------FIN FOOTER.CSS-------------------------*/
 @media (max-width: 900px){
     main {
@@ -712,7 +934,7 @@ border-top{
     height: auto;
     }
     li.nav-item {
-        flex-direction: row;
+        flex-direction: column;
     }
 }
 @media (max-width: 768px) {

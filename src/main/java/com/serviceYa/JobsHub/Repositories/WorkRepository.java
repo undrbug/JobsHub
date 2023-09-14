@@ -7,8 +7,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import java.util.List;
 
-import org.springframework.stereotype.Repository;
-@Repository
 public interface WorkRepository extends JpaRepository<Work, String> {
 
     @Query("SELECT w FROM Work w WHERE w.userProviderId = :provider_id")
