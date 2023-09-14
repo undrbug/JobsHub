@@ -75,8 +75,11 @@ button, input, textarea {
 }
 
 /*---------------------------------FIN RESET.CSS----------------------------*/
-/* Estilos generales */
-
+/* Estilos generales 
+//azulvioleta #5e17eb
+//amarrillo #f1c056
+//celeste #5dc5f6
+//violeta #9b3f94*/
 * {
   box-sizing: inherit;
 }
@@ -99,7 +102,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  background: #f43d3d8c;
+  background: #adb5bd;
   /* padding-bottom: 3em ;  Elimina el relleno para evitar espacios en blanco innecesarios en dispositivos móviles */
 }
 .container {
@@ -328,6 +331,7 @@ li.nav-item {
 
 /* Estilos para tarjetas grandes */
 .large-card {
+  margin: 3em 0em 0em 0em;
   width: 95%;
   max-width: 100%; /* Ajusta el ancho máximo para pantallas pequeñas */
   height: auto;
@@ -335,6 +339,7 @@ li.nav-item {
 
 /* Estilos para tarjetas de perfil de proveedor */
 .big-card-profile {
+  margin: 0 0 5em 0;
   width: 100%;
   max-width: 100%; /* Ajusta el ancho máximo para pantallas pequeñas */
   height: auto;
@@ -506,9 +511,8 @@ button[type="submit"] {
 }
 /* Estilos para el mensaje de error */
 .alert {
-  margin-top: 20px;
+  margin-top: 5em;
 }
-
 /*---------------------------------FIN LOGIN.CSS--------------------------*/
 
 /*---------------------------------INICIO PROVIDERS.CSS-------------------*/
