@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
-<head th:replace="th_templates/head :: head"></head>
+    <head th:replace="th_templates/head :: head">
+        <link rel="icon" type="image/png" href="../img/logo.svg">
+    </head>
 
+<!-- comment 
 <link rel="stylesheet" href="/src/main/resources/static/css/MyProfile.css" />
 <link rel="stylesheet" href="/src/main/resources/static/css/form.css" />
-
+-->
 <body>
   <!-- NAVBAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  -->
   <header th:replace="th_templates/navbar :: navbar"></header>
